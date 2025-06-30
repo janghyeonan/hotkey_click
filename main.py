@@ -22,43 +22,43 @@ def on_press(key):
         print('Alphanumeric key pressed: {0} '.format(key.char))
         
         # 좌표 저장 키들
-        if key.char == 'q':
+        if key.char == '!':
             x, y = pyautogui.position()
             saved_coordinates[1] = (x, y)
             print(f"1번 좌표 저장: {x}, {y}")
-        elif key.char == 'w':
+        elif key.char == '@':
             x, y = pyautogui.position()
             saved_coordinates[2] = (x, y)
             print(f"2번 좌표 저장: {x}, {y}")
-        elif key.char == 'e':
+        elif key.char == '#':
             x, y = pyautogui.position()
             saved_coordinates[3] = (x, y)
             print(f"3번 좌표 저장: {x}, {y}")
-        elif key.char == 'r':
+        elif key.char == '$':
             x, y = pyautogui.position()
             saved_coordinates[4] = (x, y)
             print(f"4번 좌표 저장: {x}, {y}")
-        elif key.char == 't':
+        elif key.char == '%':
             x, y = pyautogui.position()
             saved_coordinates[5] = (x, y)
             print(f"5번 좌표 저장: {x}, {y}")
-        elif key.char == 'y':
+        elif key.char == '^':
             x, y = pyautogui.position()
             saved_coordinates[6] = (x, y)
             print(f"6번 좌표 저장: {x}, {y}")
-        elif key.char == 'u':
+        elif key.char == '&':
             x, y = pyautogui.position()
             saved_coordinates[7] = (x, y)
             print(f"7번 좌표 저장: {x}, {y}")
-        elif key.char == 'i':
+        elif key.char == '*':
             x, y = pyautogui.position()
             saved_coordinates[8] = (x, y)
             print(f"8번 좌표 저장: {x}, {y}")
-        elif key.char == 'o':
+        elif key.char == '(':
             x, y = pyautogui.position()
             saved_coordinates[9] = (x, y)
             print(f"9번 좌표 저장: {x}, {y}")
-        elif key.char == 'p':
+        elif key.char == ')':
             x, y = pyautogui.position()
             saved_coordinates[0] = (x, y)
             print(f"0번 좌표 저장: {x}, {y}")
@@ -184,16 +184,16 @@ def on_release(key):
 
 print("프로그램 시작")
 print("사용법:")
-print("q: 현재 마우스 위치를 1번으로 저장")
-print("w: 현재 마우스 위치를 2번으로 저장") 
-print("e: 현재 마우스 위치를 3번으로 저장")
-print("r: 현재 마우스 위치를 4번으로 저장")
-print("t: 현재 마우스 위치를 5번으로 저장")
-print("y: 현재 마우스 위치를 6번으로 저장")
-print("u: 현재 마우스 위치를 7번으로 저장")
-print("i: 현재 마우스 위치를 8번으로 저장")
-print("o: 현재 마우스 위치를 9번으로 저장")
-print("p: 현재 마우스 위치를 0번으로 저장")
+print("!: 현재 마우스 위치를 1번으로 저장")
+print("@: 현재 마우스 위치를 2번으로 저장") 
+print("#: 현재 마우스 위치를 3번으로 저장")
+print("$: 현재 마우스 위치를 4번으로 저장")
+print("%: 현재 마우스 위치를 5번으로 저장")
+print("^: 현재 마우스 위치를 6번으로 저장")
+print("&: 현재 마우스 위치를 7번으로 저장")
+print("*: 현재 마우스 위치를 8번으로 저장")
+print("(: 현재 마우스 위치를 9번으로 저장")
+print("): 현재 마우스 위치를 0번으로 저장")
 print("1: 저장된 1번 좌표 클릭")
 print("2: 저장된 2번 좌표 클릭")
 print("3: 저장된 3번 좌표 클릭")
