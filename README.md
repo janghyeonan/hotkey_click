@@ -14,7 +14,7 @@
 
 1. 저장소 클론:
 ```bash
-git clone https://github.com/yourusername/mouse-coordinate-auto-clicker.git
+git clone https://github.com/janghyeonan/hotkey_click.git
 cd mouse-coordinate-auto-clicker
 ```
 
