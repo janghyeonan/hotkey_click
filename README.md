@@ -15,12 +15,12 @@
 1. 저장소 클론:
 ```bash
 git clone https://github.com/janghyeonan/hotkey_click.git
-cd mouse-coordinate-auto-clicker
+cd hotkey_click
 ```
 
 2. 필요한 라이브러리 설치:
 ```bash
-pip install pynput pyautogui
+pip install -r requirements.txt
 ```
 
 ## 사용법
