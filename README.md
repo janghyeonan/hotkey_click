@@ -19,14 +19,52 @@ cd hotkey_click
 ```
 
 2. 필요한 라이브러리 설치:
+
+**일반 설치:**
 ```bash
 pip install -r requirements.txt
 ```
 
+**가상환경 사용 (권장):**
+```bash
+# 가상환경 생성
+python3 -m venv venv
+
+# 가상환경 활성화
+# macOS/Linux:
+source venv/bin/activate
+# Windows:
+venv\Scripts\activate
+
+# 패키지 설치
+pip install -r requirements.txt
+```
+
+### macOS 사용자 추가 설정
+
+macOS에서는 보안상의 이유로 접근 권한을 허용해야 합니다:
+
+1. **시스템 환경설정** > **보안 및 개인정보 보호** > **개인정보 보호** 탭
+2. **입력 모니터링**과 **접근성**에서 터미널(또는 사용 중인 IDE) 추가
+3. 체크박스를 활성화하여 권한 허용
+
 ## 사용법
 
 1. 프로그램 실행:
+
+**일반 실행:**
 ```bash
+python3 main.py
+```
+
+**가상환경에서 실행:**
+```bash
+# 가상환경 활성화 (이미 했다면 생략)
+source venv/bin/activate  # macOS/Linux
+# 또는
+venv\Scripts\activate     # Windows
+
+# 프로그램 실행
 python main.py
 ```
 
@@ -70,6 +108,34 @@ python main.py
 | i       | 8    | 8       |
 | o       | 9    | 9       |
 | p       | 0    | 0       |
+
+## 문제 해결
+
+### "ModuleNotFoundError: No module named 'pynput'" 오류
+
+다음 방법으로 해결할 수 있습니다:
+
+```bash
+# requirements.txt 사용
+pip3 install -r requirements.txt
+
+# 또는 개별 설치
+pip3 install pynput pyautogui
+```
+
+### macOS 권한 문제
+
+프로그램이 실행되지 않거나 키보드/마우스 입력이 감지되지 않는 경우:
+1. **시스템 환경설정** > **보안 및 개인정보 보호** > **개인정보 보호**
+2. **입력 모니터링**과 **접근성**에서 터미널 추가
+3. 프로그램 재실행
+
+### 가상환경 비활성화
+
+작업 완료 후 가상환경을 비활성화하려면:
+```bash
+deactivate
+```
 
 ## 요구사항
 
