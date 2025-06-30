@@ -1,4 +1,3 @@
-# Description: 키보드 입력을 받아서 qwertyuiop로 좌표를 저장하고 1234567890으로 해당 좌표를 클릭하는 코드
 from pynput import keyboard
 import pyautogui
 
@@ -22,43 +21,43 @@ def on_press(key):
         print('Alphanumeric key pressed: {0} '.format(key.char))
         
         # 좌표 저장 키들
-        if key.char == 'q':
+        if key.char == '!':
             x, y = pyautogui.position()
             saved_coordinates[1] = (x, y)
             print(f"1번 좌표 저장: {x}, {y}")
-        elif key.char == 'w':
+        elif key.char == '@':
             x, y = pyautogui.position()
             saved_coordinates[2] = (x, y)
             print(f"2번 좌표 저장: {x}, {y}")
-        elif key.char == 'e':
+        elif key.char == '#':
             x, y = pyautogui.position()
             saved_coordinates[3] = (x, y)
             print(f"3번 좌표 저장: {x}, {y}")
-        elif key.char == 'r':
+        elif key.char == '$':
             x, y = pyautogui.position()
             saved_coordinates[4] = (x, y)
             print(f"4번 좌표 저장: {x}, {y}")
-        elif key.char == 't':
+        elif key.char == '%':
             x, y = pyautogui.position()
             saved_coordinates[5] = (x, y)
             print(f"5번 좌표 저장: {x}, {y}")
-        elif key.char == 'y':
+        elif key.char == '^':
             x, y = pyautogui.position()
             saved_coordinates[6] = (x, y)
             print(f"6번 좌표 저장: {x}, {y}")
-        elif key.char == 'u':
+        elif key.char == '&':
             x, y = pyautogui.position()
             saved_coordinates[7] = (x, y)
             print(f"7번 좌표 저장: {x}, {y}")
-        elif key.char == 'i':
+        elif key.char == '*':
             x, y = pyautogui.position()
             saved_coordinates[8] = (x, y)
             print(f"8번 좌표 저장: {x}, {y}")
-        elif key.char == 'o':
+        elif key.char == '(':
             x, y = pyautogui.position()
             saved_coordinates[9] = (x, y)
             print(f"9번 좌표 저장: {x}, {y}")
-        elif key.char == 'p':
+        elif key.char == ')':
             x, y = pyautogui.position()
             saved_coordinates[0] = (x, y)
             print(f"0번 좌표 저장: {x}, {y}")
@@ -210,3 +209,4 @@ with keyboard.Listener(
         on_press=on_press,
         on_release=on_release) as listener:
     listener.join()
+
